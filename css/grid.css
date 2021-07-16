@@ -1,0 +1,54 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    grid: min-content / repeat(12, 1fr); 
+    gap:1em;
+    margin:1em;
+    width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+header, footer {
+    grid-column: 1/13 ;
+}
+
+aside, nav{
+    grid-column: 1/5;
+    
+}
+
+aside{
+    grid-row: 2/3;
+}
+nav {
+    grid-row: 3/4;
+}
+
+main {
+    grid-column: 5/13;
+    grid-row: 2/4;
+}
+
+#pie1, #pie5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#pie2, #pie6 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+#pie3, #pie7 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+}
+
+#pie4, #pie8 {
+    grid-column-start: 10;
+    grid-column-end: 13;
+}
